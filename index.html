@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,14 +13,6 @@
     padding:0;
     box-sizing:border-box;
     font-family:Arial, sans-serif;
-}
-    {
-    .card img{
-    width:120px;
-    height:120px;
-    object-fit:contain;
-    display:block;
-    margin:20px auto;
 }
 
 body{
@@ -46,10 +36,9 @@ header p{
 }
 
 .container{
-    width:90%;
     max-width:1200px;
     margin:auto;
-    padding:40px 0;
+    padding:40px;
 }
 
 .titulo{
@@ -65,14 +54,22 @@ header p{
 
 .card{
     background:white;
-    border-radius:10px;
-    padding:25px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.12);
     transition:0.3s;
 }
 
 .card:hover{
     transform:translateY(-5px);
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:15px;
 }
 
 .card h3{
@@ -98,15 +95,14 @@ header p{
 }
 
 footer{
-    margin-top:50px;
     background:#222;
     color:white;
     text-align:center;
     padding:20px;
+    margin-top:50px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -122,12 +118,14 @@ footer{
         <h2>Empresas Parceiras</h2>
     </div>
 
-    <img src="logos/eaton.jpg" alt="Logo Eaton">
-
     <div class="empresas">
 
+        <!-- EATON -->
         <div class="card">
+            logos/eaton.png
+
             <h3>Eaton</h3>
+
             <p>Logística, Engenharia e Administração.</p>
 
             eaton.html
@@ -135,8 +133,12 @@ footer{
             </a>
         </div>
 
+        <!-- DHL -->
         <div class="card">
+            logos/dhl.png
+
             <h3>DHL</h3>
+
             <p>Transporte e Logística.</p>
 
             dhl.html
@@ -144,8 +146,12 @@ footer{
             </a>
         </div>
 
+        <!-- AMAZON -->
         <div class="card">
+            logos/amazon.png
+
             <h3>Amazon</h3>
+
             <p>Tecnologia e Operações.</p>
 
             amazon.html
@@ -153,17 +159,24 @@ footer{
             </a>
         </div>
 
+        <!-- MERCADO LIVRE -->
         <div class="card">
+            logos/mercadolivre.png
+
             <h3>Mercado Livre</h3>
+
             <p>Centro de Distribuição e Tecnologia.</p>
 
-            mercadolivre.html
-                Acessar
+            <a href="mercadolivre             Acessar
             </a>
         </div>
 
+        <!-- MICROSOFT -->
         <div class="card">
+            logos/microsoft.png
+
             <h3>Microsoft</h3>
+
             <p>Desenvolvimento e Inovação.</p>
 
             microsoft.html
@@ -180,5 +193,4 @@ footer{
 </footer>
 
 </body>
-
 </html>
