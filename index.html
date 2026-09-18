@@ -46,62 +46,43 @@
             margin-bottom:30px;
         }
 
-        .empresas{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:25px;
-        }
+.empresas{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
 
-        .card{
-            background:white;
-            border-radius:12px;
-            padding:20px;
-            text-align:center;
-            box-shadow:0 0 10px rgba(0,0,0,0.15);
-            transition:0.3s;
-        }
+.card{
+    width:300px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
 
-        .card:hover{
-            transform:translateY(-5px);
-        }
-
-   .card img{
+.logo{
     width:150px;
     height:100px;
     object-fit:contain;
-    display:block;
-    margin:0 auto 15px auto;
+    margin-bottom:15px;
 }
-
-        .card h3{
-            color:#0056b3;
-            margin-bottom:10px;
-        }
-
-        .card p{
-            margin-bottom:15px;
-        }
 
 .botao{
     display:inline-block;
-    background:#0066cc;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#0078d4;
     color:white;
-    padding:12px 25px;
-    border-radius:8px;
     text-decoration:none;
+    border-radius:8px;
     font-weight:bold;
-    transition:0.3s;
 }
 
 .botao:hover{
-    background:#004c99;
+    background:#005a9e;
 }
-        }
-
-        .botao:hover{
-            background:#003f85;
-        }
-
         footer{
             background:#222;
             color:white;
@@ -129,9 +110,12 @@
 
 <div class="empresas">
 
+    <!-- MICROSOFT -->
     <div class="card">
-        <img id="microsoftLogo" class="logo">
+        <img id="microsoftLogo" class="logo" alt="Microsoft">
+
         <h3>Microsoft</h3>
+
         <p>Desenvolvimento e Inovação.</p>
 
         https://jobs.careers.microsoft.com/
@@ -139,17 +123,25 @@
         </a>
     </div>
 
+    <!-- AMAZON -->
     <div class="card">
-        <img id="amazonLogo" class="logo">
+        <img id="amazonLogo" class="logo" alt="Amazon">
+
         <h3>Amazon</h3>
+
         <p>E-commerce e Tecnologia.</p>
 
-        <a href="https://www.amazon.jobs/" class="bot        </a>
+        https://www.amazon.jobs/
+            Acessar
+        </a>
     </div>
 
+    <!-- DHL -->
     <div class="card">
-        <img id="dhlLogo" class="logo">
+        <img id="dhlLogo" class="logo" alt="DHL">
+
         <h3>DHL</h3>
+
         <p>Logística e Transporte.</p>
 
         https://careers.dhl.com/
@@ -158,6 +150,13 @@
     </div>
 
 </div>
+
+        <script>
+document.getElementById("microsoftLogo").src = "logos/microsoft.jpg";
+document.getElementById("amazonLogo").src = "logos/amazon.jpg";
+document.getElementById("dhlLogo").src = "logos/dhl.jpg";
+</script>
+``
 
 
     <footer>
